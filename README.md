@@ -25,7 +25,7 @@ A production-grade SaaS dashboard frontend built with **Next.js 14**, **TypeScri
 
 ### Prerequisites
 - Node.js 18+
-- npm or yarn
+- yarn
 - Git
 
 ### Installation
@@ -36,13 +36,13 @@ git clone <repo-url>
 cd saas-subscription-manager
 
 # Install dependencies
-npm install
+yarn 
 
 # Start json-server (mock backend) in one terminal
-npm run api
+ yarn api
 
 # Start development server in another terminal
-npm run dev
+ yarn dev
 ```
 
 The app will be available at `http://localhost:3000`  
