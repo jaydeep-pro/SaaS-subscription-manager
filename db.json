@@ -1,6 +1,67 @@
 {
-  "plans": [],
-  "customers": [],
-  "subscriptions": [],
-  "invoices": []
+  "plans": [
+    {
+      "id": "starter",
+      "name": "Starter",
+      "price": 9,
+      "interval": "month",
+      "description": "Perfect for getting started",
+      "features": ["Up to 5 projects", "Basic support", "Monthly reports"]
+    },
+    {
+      "id": "pro",
+      "name": "Pro",
+      "price": 29,
+      "interval": "month",
+      "description": "For growing teams",
+      "features": [
+        "Unlimited projects",
+        "Priority support",
+        "Advanced analytics"
+      ]
+    },
+    {
+      "id": "enterprise",
+      "name": "Enterprise",
+      "price": 99,
+      "interval": "month",
+      "description": "Custom solutions",
+      "features": [
+        "Everything in Pro",
+        "Dedicated account manager",
+        "Custom integrations"
+      ]
+    }
+  ],
+  "customers": [
+    {
+      "id": "cus_001",
+      "name": "Jaydeep Patel",
+      "email": "jaydeep@example.com",
+         "created": "2024-01-15"
+    }
+
+  ],
+  "subscriptions": [
+    {
+      "id": "sub_001",
+      "customerId": "cus_001",
+      "planId": "pro",
+      "status": "active",
+      "currentPeriodStart": "2024-12-01",
+      "currentPeriodEnd": "2025-01-01",
+      "canceledAt": null
+    }
+  ],
+  "invoices": [
+    {
+      "id": "inv_001",
+      "customerId": "cus_001",
+      "amount": 2900,
+      "currency": "USD",
+      "status": "paid",
+      "date": "2024-12-01",
+      "planId": "pro"
+    }
+  ]
 }
